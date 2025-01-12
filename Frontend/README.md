@@ -23,4 +23,8 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Deploy
+
+Deploy works automatically with each push to github pages. The template is deployed to [dhbw-ka-webengineering.github.io/Template_Svelte/](https://dhbw-ka-webengineering.github.io/Template_Svelte/)
+
+Because of the _Template_Svelte_ path in the URL, `base: process.env.NODE_ENV === 'production' ? '/Template_Svelte' : ''` is required in line 16 of the [svelte.config.js file](svelte.config.js). If you deploy the repo to a different URL, you will need to adapt or remove this part.
